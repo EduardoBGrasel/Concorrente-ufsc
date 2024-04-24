@@ -1,3 +1,16 @@
+
+// Perguntas
+/*
+1 - Qual a relação entre n_threads e a diferença entre "Contador" e "Esperado"?
+R: Quanto mais threads mais partes críticas do programa estarão a ser executadas ao mesmo tempo, gerando assim uma maior discrepância no contador em relação ao esperado
+
+2- Qual a relação entre n_loops e a diferença entre "Contador" e "Esperado"?
+R: Quanto mais loops, maior a chance de alguma thread executar uma região crítica ao mesmo tempo de outra
+
+3 - Existe alguma regra ou padrão na diferença entre "Contador" e "Esperado"?
+R: Não existe, o código vai ser executado da maneira que o sistema operancional escolher, ou seja, são muitas variáveis para levar em consideração, o que torna aos olhos humanos como algo "aleatório"
+*/
+
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/types.h>
